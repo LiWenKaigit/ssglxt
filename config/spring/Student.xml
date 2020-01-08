@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	
+	<bean id="studentDao" class="com.ssglxt.Student.dao.impl.StudentDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="studentService" class="com.ssglxt.Student.service.impl.StudentServiceImpl">
+		<property name="studentDao" ref="studentDao"></property>
+	</bean>
+	<bean id="studentAction" class="com.ssglxt.Student.action.StudentAction">
+		<property name="studentService" ref="studentService"></property>
+	</bean>
+	
+	
+	
+	<bean id="repairDao" class="com.ssglxt.Student.dao.impl.RepairDaoimpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="repairService" class="com.ssglxt.Student.service.impl.RepairServiceImpl">
+		<property name="repairDao" ref="repairDao"></property>
+	</bean>
+	<bean id="repairAction" class="com.ssglxt.Student.action.RepairAction">
+		<property name="repairService" ref="repairService"></property>
+	</bean>
+	
+	
+	<bean id="breakDao" class="com.ssglxt.Student.dao.impl.BreakDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="breakService" class="com.ssglxt.Student.service.impl.BreakServiceImpl">
+		<property name="breakDao" ref="breakDao"></property>
+	</bean>
+	<bean id="breakAction" class="com.ssglxt.Student.action.BreakAction">
+		<property name="breakService" ref="breakService"></property>
+	</bean>
+	
+</beans>
+

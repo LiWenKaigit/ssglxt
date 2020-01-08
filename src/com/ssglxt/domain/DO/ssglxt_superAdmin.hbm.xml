@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-1-14 20:31:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ssglxt.domain.DO.ssglxt_superAdmin" table="SSGLXT_SUPERADMIN">
+        <id name="superAdmin_id" type="java.lang.String">
+            <column name="SUPERADMIN_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="superAdmin_jobNumber" type="java.lang.String">
+            <column name="SUPERADMIN_JOBNUMBER" />
+        </property>
+        <property name="superAdmin_password" type="java.lang.String">
+            <column name="SUPERADMIN_PASSWORD" />
+        </property>
+        <property name="superAdmin_creat_time" type="java.lang.String">
+            <column name="SUPERADMIN_CREAT_TIME" />
+        </property>
+        <property name="superAdmin_modify_time" type="java.lang.String">
+            <column name="SUPERADMIN_MODIFY_TIME" />
+        </property>
+        <property name="superAdmin_role" type="java.lang.String">
+            <column name="SUPERADMIN_ROLE" />
+        </property>
+        <property name="superAdmin_name" type="java.lang.String">
+            <column name="SUPERADMIN_NAME" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-1-14 20:31:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ssglxt.domain.DO.ssglxt_admin" table="SSGLXT_ADMIN">
+        <id name="admin_id" type="java.lang.String">
+            <column name="ADMIN_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="admin_jobNumber" type="java.lang.String">
+            <column name="ADMIN_JOBNUMBER" />
+        </property>
+        <property name="admin_name" type="java.lang.String">
+            <column name="ADMIN_NAME" />
+        </property>
+        <property name="admin_sex" type="java.lang.String">
+            <column name="ADMIN_SEX" />
+        </property>
+        <property name="admin_age" type="java.lang.String">
+            <column name="ADMIN_AGE" />
+        </property>
+        <property name="admin_jobBuilding" type="java.lang.String">
+            <column name="ADMIN_JOBBUILDING" />
+        </property>
+        <property name="admin_phone" type="java.lang.String">
+            <column name="ADMIN_PHONE" />
+        </property>
+        <property name="admin_address" type="java.lang.String">
+            <column name="ADMIN_ADDRESS" />
+        </property>
+        <property name="admin_password" type="java.lang.String">
+            <column name="ADMIN_PASSWORD" />
+        </property>
+        <property name="admin_creat_time" type="java.lang.String">
+            <column name="ADMIN_CREAT_TIME" />
+        </property>
+        <property name="admin_modify_time" type="java.lang.String">
+            <column name="ADMIN_MODIFY_TIME" />
+        </property>
+        <property name="admin_role" type="java.lang.String">
+            <column name="ADMIN_ROLE" />
+        </property>
+    </class>
+</hibernate-mapping>

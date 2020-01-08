@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-1-14 20:31:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ssglxt.domain.DO.ssglxt_dormitory" table="SSGLXT_DORMITORY">
+        <id name="dormitory_id" type="java.lang.String">
+            <column name="DORMITORY_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="dormitory_buildingName" type="java.lang.String">
+            <column name="DORMITORY_BUILDINGNAME" />
+        </property>
+        <property name="dormitory_name" type="java.lang.String">
+            <column name="DORMITORY_NAME" />
+        </property>
+        <property name="dormitory_scale" type="java.lang.String">
+            <column name="DORMITORY_SCALE" />
+        </property>
+        <property name="dormitory_liveStatus" type="java.lang.String">
+            <column name="DORMITORY_LIVESTATUS" />
+        </property>
+        <property name="dormitory_studentId" type="java.lang.String">
+            <column name="DORMITORY_STUDENTID" />
+        </property>
+        <property name="dormitory_creat_time" type="java.lang.String">
+            <column name="DORMITORY_CREAT_TIME" />
+        </property>
+        <property name="dormitory_modify_time" type="java.lang.String">
+            <column name="DORMITORY_MODIFY_TIME" />
+        </property>
+    </class>
+</hibernate-mapping>

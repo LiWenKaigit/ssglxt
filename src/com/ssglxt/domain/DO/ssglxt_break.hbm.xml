@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-1-14 20:31:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ssglxt.domain.DO.ssglxt_break" table="SSGLXT_BREAK">
+        <id name="break_id" type="java.lang.String">
+            <column name="BREAK_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="break_reason" type="java.lang.String">
+            <column name="BREAK_REASON" />
+        </property>
+        <property name="break_time" type="java.lang.String">
+            <column name="BREAK_TIME" />
+        </property>
+        <property name="break_studentId" type="java.lang.String">
+            <column name="BREAK_STUDENTID" />
+        </property>
+        <property name="break_creat_time" type="java.lang.String">
+            <column name="BREAK_CREAT_TIME" />
+        </property>
+        <property name="break_modify_time" type="java.lang.String">
+            <column name="BREAK_MODIFY_TIME" />
+        </property>
+    </class>
+</hibernate-mapping>

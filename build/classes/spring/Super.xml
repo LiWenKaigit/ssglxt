@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	
+	<bean id="dormitoryBuildingDao" class="com.ssglxt.Super.dao.impl.DormitoryBuildingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="dormitoryBuildingService" class="com.ssglxt.Super.service.impl.DormitoryBuildingServiceImpl">
+		<property name="dormitoryBuildingDao" ref="dormitoryBuildingDao"></property>
+	</bean>
+	<bean id="dormitoryBuildingAction" class="com.ssglxt.Super.action.DormitoryBuildingAction">
+		<property name="dormitoryBuildingService" ref="dormitoryBuildingService"></property>
+	</bean>
+	
+	
+	<bean id="loginOroutDao" class="com.ssglxt.Super.dao.impl.LoginOroutDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="loginOroutService" class="com.ssglxt.Super.service.impl.LoginOroutServiceImpl">
+		<property name="loginOroutDao" ref="loginOroutDao"></property>
+	</bean>
+	<bean id="loginOroutAction" class="com.ssglxt.Super.action.LoginOroutAction">
+		<property name="loginOroutService" ref="loginOroutService"></property>
+	</bean>
+	
+	
+	<bean id="superAdminDao" class="com.ssglxt.Super.dao.impl.SuperAdminDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="superAdminService" class="com.ssglxt.Super.service.impl.SuperAdminServiceImpl">
+		<property name="superAdminDao" ref="superAdminDao"></property>
+	</bean>
+	<bean id="superAdminAction" class="com.ssglxt.Super.action.SuperAdminAction">
+		<property name="superAdminService" ref="superAdminService"></property>
+	</bean>
+	
+	
+	
+	<bean id="bedDao" class="com.ssglxt.Super.dao.impl.BedDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="bedService" class="com.ssglxt.Super.service.impl.BedServiceImpl">
+		<property name="bedDao" ref="bedDao"></property>
+	</bean>
+	<bean id="bedAction" class="com.ssglxt.Super.action.BedAction">
+		<property name="bedService" ref="bedService"></property>
+	</bean>
+	
+	
+	
+	
+	<bean id="dormitoryDao" class="com.ssglxt.Super.dao.impl.DormitoryDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="dormitoryService" class="com.ssglxt.Super.service.impl.DormitoryServiceImpl">
+		<property name="dormitoryDao" ref="dormitoryDao"></property>
+	</bean>
+	<bean id="dormitoryAction" class="com.ssglxt.Super.action.DormitoryAction">
+		<property name="dormitoryService" ref="dormitoryService"></property>
+	</bean>
+	
+	
+	
+	
+	<bean id="adminDao" class="com.ssglxt.Super.dao.impl.AdminDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="adminService" class="com.ssglxt.Super.service.impl.AdminServiceImpl">
+		<property name="adminDao" ref="adminDao"></property>
+	</bean>
+	<bean id="adminAction" class="com.ssglxt.Super.action.AdminAction">
+		<property name="adminService" ref="adminService"></property>
+	</bean>
+</beans>
+

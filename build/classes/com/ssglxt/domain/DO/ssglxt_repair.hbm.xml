@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-1-14 20:31:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ssglxt.domain.DO.ssglxt_repair" table="SSGLXT_REPAIR">
+        <id name="repair_id" type="java.lang.String">
+            <column name="REPAIR_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="repair_name" type="java.lang.String">
+            <column name="REPAIR_NAME" />
+        </property>
+        <property name="repair_remarks" type="java.lang.String">
+            <column name="REPAIR_REMARKS" />
+        </property>
+        <property name="repair_studentId" type="java.lang.String">
+            <column name="REPAIR_STUDENTID" />
+        </property>
+        <property name="repair_status" type="java.lang.String">
+            <column name="REPAIR_STATUS" />
+        </property>
+        <property name="repair_creat_time" type="java.lang.String">
+            <column name="REPAIR_CREAT_TIME" />
+        </property>
+        <property name="repair_modify_time" type="java.lang.String">
+            <column name="REPAIR_MODIFY_TIME" />
+        </property>
+    </class>
+</hibernate-mapping>

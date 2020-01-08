@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-1-14 20:31:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ssglxt.domain.DO.ssglxt_student" table="SSGLXT_STUDENT">
+        <id name="student_id" type="java.lang.String">
+            <column name="STUDENT_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="student_studentId" type="java.lang.String">
+            <column name="STUDENT_STUDENTID" />
+        </property>
+        <property name="student_name" type="java.lang.String">
+            <column name="STUDENT_NAME" />
+        </property>
+        <property name="student_sex" type="java.lang.String">
+            <column name="STUDENT_SEX" />
+        </property>
+        <property name="student_IDNUMBER" type="java.lang.String">
+            <column name="STUDENT_IDNUMBER" />
+        </property>
+        <property name="student_faculty" type="java.lang.String">
+            <column name="STUDENT_FACULTY" />
+        </property>
+        <property name="student_major" type="java.lang.String">
+            <column name="STUDENT_MAJOR" />
+        </property>
+        <property name="student_class" type="java.lang.String">
+            <column name="STUDENT_CLASS" />
+        </property>
+        <property name="student_phone" type="java.lang.String">
+            <column name="STUDENT_PHONE" />
+        </property>
+        <property name="student_address" type="java.lang.String">
+            <column name="STUDENT_ADDRESS" />
+        </property>
+        <property name="student_buildingName" type="java.lang.String">
+            <column name="STUDENT_BUILDINGNAME" />
+        </property>
+        <property name="student_dormitoryName" type="java.lang.String">
+            <column name="STUDENT_DORMITORYNAME" />
+        </property>
+        <property name="student_bedName" type="java.lang.String">
+            <column name="STUDENT_BEDNAME" />
+        </property>
+        <property name="student_checkIn_time" type="java.lang.String">
+            <column name="STUDENT_CHECKIN_TIME" />
+        </property>
+        <property name="student_changeSleep_time" type="java.lang.String">
+            <column name="STUDENT_CHANGESLEEP_TIME" />
+        </property>
+        <property name="student_retireSleep" type="java.lang.String">
+            <column name="STUDENT_RETIRESLEEP" />
+        </property>
+        <property name="student_retireSleep_time" type="java.lang.String">
+            <column name="STUDENT_RETIRESLEEP_TIME" />
+        </property>
+        <property name="student_password" type="java.lang.String">
+            <column name="STUDENT_PASSWORD" />
+        </property>
+        <property name="student_creat_time" type="java.lang.String">
+            <column name="STUDENT_CREAT_TIME" />
+        </property>
+        <property name="student_modify_time" type="java.lang.String">
+            <column name="STUDENT_MODIFY_TIME" />
+        </property>
+        <property name="student_role" type="java.lang.String">
+            <column name="STUDENT_ROLE" />
+        </property>
+    </class>
+</hibernate-mapping>

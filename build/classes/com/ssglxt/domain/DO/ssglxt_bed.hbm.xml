@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-1-14 20:31:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ssglxt.domain.DO.ssglxt_bed" table="SSGLXT_BED">
+        <id name="bed_id" type="java.lang.String">
+            <column name="BED_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="bed_name" type="java.lang.String">
+            <column name="BED_NAME" />
+        </property>
+        <property name="bed_status" type="java.lang.String">
+            <column name="BED_STATUS" />
+        </property>
+        <property name="bed_buildingName" type="java.lang.String">
+            <column name="BED_BUILDINGNAME" />
+        </property>
+        <property name="bed_dormitoryName" type="java.lang.String">
+            <column name="BED_DORMITORYNAME" />
+        </property>
+        <property name="bed_studentId" type="java.lang.String">
+            <column name="BED_STUDENTID" />
+        </property>
+        <property name="bed_creat_time" type="java.lang.String">
+            <column name="BED_CREAT_TIME" />
+        </property>
+        <property name="bed_modify_time" type="java.lang.String">
+            <column name="BED_MODIFY_TIME" />
+        </property>
+    </class>
+</hibernate-mapping>
